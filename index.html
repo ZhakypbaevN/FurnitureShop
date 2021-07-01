@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="assets/css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Useful meta tags -->
+<meta name="description" content="Описание страницы" />
+<meta name="keywords" content="создание сайтов, верстка сайтов" />
+<meta name="google" content="notranslate" />
+
+<title>Funiro</title>
+</head>
+<body class="body">
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__nav">
+
+                <button class="nav-toggle" id="nav_toggle" type="button">
+                    <span class="nav-toggle__item">Menu</span>
+                </button>
+
+                <a class="header__logo" href="#" data-scroll="#intro">
+                    Funiro.
+                </a>
+
+
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item nav__itemHaSubnav">
+                            <div class="nav__link has__subnav">
+                                <span>Products</span>
+                                <div class="nav__link--arrow">
+                                    <svg>
+                                        <use xlink:href="assets/images/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <ul class="subnav subnav--nav">
+                                <li>
+                                    <a class="subnav__link" href="#" >
+                                        bed
+                                        <svg>
+                                            <use xlink:href="assets/images/sprite.svg#arrow_2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#" >
+                                        armchairs
+                                        <svg>
+                                            <use xlink:href="assets/images/sprite.svg#arrow_2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#" >
+                                        sofas
+                                        <svg>
+                                            <use xlink:href="assets/images/sprite.svg#arrow_2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item nav__itemHaSubnav">
+                            <div class="nav__link has__subnav">
+                                <span>Rooms</span>
+                                <div class="nav__link--arrow">
+                                    <svg>
+                                        <use xlink:href="assets/images/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <ul class="subnav subnav--nav">
+                                <li>
+                                    <a class="subnav__link has__subnav" href="#" >
+                                        Rooms #1
+                                        <svg>
+                                            <use xlink:href="assets/images/sprite.svg#arrow_2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#" >
+                                        Rooms #2
+                                        <svg>
+                                            <use xlink:href="assets/images/sprite.svg#arrow_2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#" >
+                                        Rooms #3
+                                        <svg>
+                                            <use xlink:href="assets/images/sprite.svg#arrow_2"></use>
+                                        </svg>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" data-scroll="#rooms">Inspirations</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                
+                <div class="header__search">
+                    <label class="search__icon" for="search">
+                        <svg class="search">
+                            <use xlink:href="assets/images/sprite.svg#search"></use>
+                        </svg>
+                    </label>
+
+                    <input id="search" type="text" placeholder="Search.." name="search" id="search">
+                </div>
+            </div>
+
+
+            <div class="header__account">
+                <button class="search__btn" id="search__btn">
+                    <svg class="search">
+                        <use xlink:href="assets/images/sprite.svg#search"></use>
+                    </svg>
+                </button>
+                <div class="account__link" id="liked">
+                    <div class="account__link--icon"  id="likedBtn">
+                        <svg class="account__link--liked">
+                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                        </svg>
+                        <span class="account__link--quantity" id="likedProductQuantity">0</span>
+                    </div>
+                    
+                    <div class="subnav subnav--account__link liked">
+                        <ul class="subnav-content__list likeContentList">
+                            <li class="subnav-content__item liked__product">
+                                <article class="subnav-product">
+                                    <div class="subnav-product__content">
+                                        <img class="subnav-product__img" src="assets/images/product_5.jpg" alt="">
+                                        <div class="subnav-product__text">
+                                            <h3 class="subnav-product__title">Grifo</h3>
+                                            <div class="subnav-product__price">Rp <span>1.500.000</span></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="subnav-product__control">
+                                        <button class="subnav-product__cart liked-product__cart">
+                                            <svg>
+                                                <use xlink:href="assets/images/sprite.svg#basket"></use>
+                                            </svg>
+                                            <span class="subnav-product__cart--quantity">
+                                                <svg>
+                                                    <use xlink:href="assets/images/sprite.svg#checkMark"></use>
+                                                </svg>
+                                            </span>
+                                        </button> 
+                                        
+                                        <button class="subnav-product__delete liked-product__delete">
+                                            <svg>
+                                                <use xlink:href="assets/images/sprite.svg#trash"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="account__link" id="cart">
+                    <div class="account__link--icon" id="cartBtn">
+                        <svg class="account__link--cart">
+                            <use xlink:href="assets/images/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="account__link--quantity" id="cartProductQuantity">0</span>
+                    </div>
+                    
+                    <div class="subnav subnav--account__link cart">
+                        <div class="subnav-contentEmpty">
+                            <div>
+                                No products!
+                            </div>
+                        </div> 
+                        <ul class="subnav-content__list cartContentList">
+                            <li class="subnav-content__item cart__product" data-id="5">
+                                <article class="subnav-product">
+                                    <div class="subnav-product__content">
+                                        <img src="assets/images/product_5.jpg" alt="" class="subnav-product__img">
+                                        <div class="subnav-product__text">
+                                            <h3 class="subnav-product__title">Grifo</h3>
+                                            <div class="subnav-product__price">Rp <span>1.500.000</span></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="subnav-product__control">
+                                        <div class="subnav-product__quantity">
+                                            <button class="subnav-product__arrow subnav-product__arrow--top">
+                                                <svg>
+                                                    <use xlink:href="assets/images/sprite.svg#arrow"></use>
+                                                </svg>
+                                            </button>
+                                            
+                                            <div class="subnav-product__quantity--num">1</div>
+                                            
+                                            <button class="subnav-product__arrow subnav-product__arrow--bottom">
+                                                <svg>
+                                                    <use xlink:href="assets/images/sprite.svg#arrow"></use>
+                                                </svg>
+                                            </button>
+                                        </div> 
+                                        <button class="subnav-product__delete cart-product__delete">
+                                            <svg>
+                                                <use xlink:href="assets/images/sprite.svg#trash"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        
+
+                        <div class="subnav-content__bottom">
+                            <div class="subnav-content__fullprice">
+                                <span>Total:</span>
+                                <div class="fullprice">Rp <span>0</span></div>
+                            </div>
+                            <div class=" btn primary subnav-content__btn">BUY (<span class="subnav-content__btn--num">1</span>)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account__link accountProf__link">
+                    <div class="accountProf__linkPhoto">
+                        <img src="assets/images/profile__photo.jpg" alt="#">
+                    </div>
+
+                    <div class="subnav subnav--account__link subnav--accountProf__link">
+                        <ul>
+                            <li>
+                                <a class="subnav__link" href="#" >
+                                    sign&nbsp;in
+                                </a>
+                            </li>
+                            <li>
+                                <a class="subnav__link" href="#" >
+                                    sign&nbsp;up
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main">
+<section class="intro section">
+    <div class="container">
+        <div class="intro__inner">
+
+            <div class="intro__content">
+                <div>
+                    <h1 class="intro__title">High-Quality Furniture Just For You</h1>
+                    <p class="intro__subtitle">Our furniture is made from selected and best quality materials that are suitable for your dream home</p>
+                    <a class="btn primary intro__btn" href="#">Shop Now</a>
+                </div>
+
+            </div>
+
+            <div class="intro__slider">
+                <div class="intro__productsControl">
+                    <div class="intro__productsDots"></div>
+                    <div class="intro__productsBtn"></div>
+                </div>
+
+                <div class="intro__products"  id="introSliderProducts">
+
+
+                    <div class="intro__item">
+                        <div class="intro__photo">
+                            <img src="assets/images/intro__photo_1.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="intro__item">
+                        <div class="intro__photo">
+                            <img src="assets/images/intro__photo_2.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="intro__item">
+                        <div class="intro__photo">
+                            <img src="assets/images/intro__photo_3.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="intro__item">
+                        <div class="intro__photo">
+                            <img src="assets/images/intro__photo_4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="intro__productsDesc">
+                    <div id="introProductDesc">
+                        <div class="intro__productItem">
+                            <a href="#">
+                                <div class="intro__productTitle">Bohauss</div>
+                                <p class="intro__productSubtitle">Luxury big sofa 2-seat</p>
+                                <p class="intro__productPrice">Rp 17.000.000</p>
+                                <svg>
+                                    <use xlink:href="assets/images/sprite.svg#arrow_2"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="intro__productItem">
+                            <a href="#">
+                                <div class="intro__productTitle">Bohauss</div>
+                                <p class="intro__productSubtitle">Luxury big sofa 2-seat</p>
+                                <p class="intro__productPrice">Rp 35.000.000</p>
+                                <span class="intro__producArrow"></span>
+                                <svg>
+                                    <use xlink:href="assets/images/sprite.svg#arrow_2"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="intro__productItem">
+                            <a href="#">
+                                <div class="intro__productTitle">Bohauss</div>
+                                <p class="intro__productSubtitle">Luxury big sofa 2-seat</p>
+                                <p class="intro__productPrice">Rp 25.000.000</p>
+                                <svg>
+                                    <use xlink:href="assets/images/sprite.svg#arrow_2"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="intro__productItem">
+                            <a href="#">
+                                <div class="intro__productTitle">Bohauss</div>
+                                <p class="intro__productSubtitle">Luxury big sofa 2-seat</p>
+                                <p class="intro__productPrice">Rp 30.000.000</p>
+                                <svg>
+                                    <use xlink:href="assets/images/sprite.svg#arrow_2"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="services">
+    <div class="container">
+        <div class="services__inner">
+
+            <div class="services__item">
+                <div class="services__logo">
+                    <svg>
+                        <use xlink:href="assets/images/sprite.svg#services_1"></use>
+                    </svg>
+                </div>
+                <div>
+                    <div class="services__title">High Quality</div>
+                    <p class="services__subtitle">Crafted from top materials</p>
+                </div>
+            </div>
+
+            <div class="services__item">
+                <div class="services__logo">
+                    <svg>
+                        <use xlink:href="assets/images/sprite.svg#services_2"></use>
+                    </svg>
+                </div>
+                <div>
+                    <div class="services__title">Warrany Protection</div>
+                    <p class="services__subtitle">Over 2 years</p>
+                </div>
+            </div>
+
+            <div class="services__item">
+                <div class="services__logo">
+                    <svg>
+                        <use xlink:href="assets/images/sprite.svg#services_3"></use>
+                    </svg>
+                </div>
+                <div>
+                    <div class="services__title">Free Shipping</div>
+                    <p class="services__subtitle">Order over 150&nbsp;$</p>
+                </div>
+            </div>
+
+            <div class="services__item">
+                <div class="services__logo">
+                    <svg>
+                        <use xlink:href="assets/images/sprite.svg#services_4"></use>
+                    </svg>
+                </div>
+                <div>
+                    <div class="services__title">24 / 7 Support</div>
+                    <p class="services__subtitle">Dedicated support</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<section class="products section">
+    <div class="container">
+        <div class="products__inner">
+            <h2 class="section__title">Our Products</h2>
+            <div class="products__all">
+
+                <div class="product__item sale">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_1.jpg" alt="wcw">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Syltherine</div>
+                                <p class="product__subtitle">Stylish cafe chair</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>2.500.000</span></p>
+                                <del class="product__sale">Rp 3.500.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart
+                                </button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_2.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Leviosa</div>
+                                <p class="product__subtitle">Stylish cafe chair</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>2.500.000</span></p>
+                                <del class="product__sale">Rp 3.500.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item sale">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-50%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_3.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Lolito</div>
+                                <p class="product__subtitle">Luxury big sofa</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>7.000.000</span></p>
+                                <del class="product__sale">Rp 14.000.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item new">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_4.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Respira</div>
+                                <p class="product__subtitle">Minimalist fan</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>500.000</span></p>
+                                <del class="product__sale">Rp 500.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_5.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Grifo</div>
+                                <p class="product__subtitle">Night lamp</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>1.500.000</span></p>
+                                <del class="product__sale">Rp 1.500.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item new">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_6.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Muggo</div>
+                                <p class="product__subtitle">Small mug</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>150.000</span></p>
+                                <del class="product__sale">Rp 150.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_7.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Pingky</div>
+                                <p class="product__subtitle">Cute bed set</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>7.000.000</span></p>
+                                <del class="product__sale">Rp 14.000.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item sale">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-50%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_8.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Potty</div>
+                                <p class="product__subtitle">Minimalist flower pot</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>500.000</span></p>
+                                <del class="product__sale">Rp 1.000.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item new">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_4.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Respira</div>
+                                <p class="product__subtitle">Minimalist fan</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>500.000</span></p>
+                                <del class="product__sale">Rp 500.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item sale">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_5.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Grifo</div>
+                                <p class="product__subtitle">Night lamp</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>1.500.000</span></p>
+                                <del class="product__sale">Rp 1.500.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_6.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Muggo</div>
+                                <p class="product__subtitle">Small mug</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>150.000</span></p>
+                                <del class="product__sale">Rp 150.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item new">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_7.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Pingky</div>
+                                <p class="product__subtitle">Cute bed set</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>7.000.000</span></p>
+                                <del class="product__sale">Rp 14.000.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item sale">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_8.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Potty</div>
+                                <p class="product__subtitle">Minimalist flower pot</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>500.000</span></p>
+                                <del class="product__sale">Rp 500.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_3.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Lolito</div>
+                                <p class="product__subtitle">Luxury big sofa</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>7.000.000</span></p>
+                                <del class="product__sale">Rp 14.000.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item new">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_4.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Respira</div>
+                                <p class="product__subtitle">Minimalist fan</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>500.000</span></p>
+                                <del class="product__sale">Rp 500.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_5.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Grifo</div>
+                                <p class="product__subtitle">Night lamp</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>1.500.000</span></p>
+                                <del class="product__sale">Rp 1.500.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_6.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Muggo</div>
+                                <p class="product__subtitle">Small mug</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>150.000</span></p>
+                                <del class="product__sale">Rp 150.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item sale">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_7.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Pingky</div>
+                                <p class="product__subtitle">Cute bed set</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>7.000.000</span></p>
+                                <del class="product__sale">Rp 14.000.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_8.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Potty</div>
+                                <p class="product__subtitle">Minimalist flower pot</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>500.000</span></p>
+                                <del class="product__sale">Rp 500.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item new">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_4.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Respira</div>
+                                <p class="product__subtitle">Minimalist fan</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>500.000</span></p>
+                                <del class="product__sale">Rp 500.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item sale">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_5.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Grifo</div>
+                                <p class="product__subtitle">Night lamp</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>1.500.000</span></p>
+                                <del class="product__sale">Rp 1.500.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_6.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Muggo</div>
+                                <p class="product__subtitle">Small mug</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>150.000</span></p>
+                                <del class="product__sale">Rp 150.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item new">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_7.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Pingky</div>
+                                <p class="product__subtitle">Cute bed set</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>7.000.000</span></p>
+                                <del class="product__sale">Rp 14.000.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item sale">
+                    <div class="product__labels">
+                        <div class="product__label product__label__sale">-30%</div>
+                        <div class="product__label product__label__new">New</div>
+                    </div>
+                    
+                    <div class="product__photo">
+                        <img class="product__img" src="assets/images/product_8.jpg" alt="">
+                    </div>
+                    <div class="products__itemContent">
+                        <div class="product__info">
+                            <div class="product__infoMain">
+                                <div class="product__title">Potty</div>
+                                <p class="product__subtitle">Minimalist flower pot</p>
+                            </div>
+
+                            <div class="product__priceAll">
+                                <p class="product__price">Rp <span>500.000</span></p>
+                                <del class="product__sale">Rp 500.000</del>
+                            </div>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__hoverMain">
+                                <button class="btn secondary product__btn ">Add to cart</button>
+                                <div>
+                                    <a href="#" class="product__link">
+                                        <svg class="product__linkImg product__linkImg--Share">
+                                            <use xlink:href="assets/images/sprite.svg#share"></use>
+                                        </svg>
+                                        <p class="product__linkText">Share</p>
+                                    </a>
+                                    <a href="#" class="product__link product__link--Like">
+                                        <svg class="product__linkImg product__linkImg--Like">
+                                            <use xlink:href="assets/images/sprite.svg#like"></use>
+                                        </svg>
+                                        <p class="product__linkText">Like</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="products__btn btn secondary" id="showMore">Show More</button>
+        </div>
+    </div>
+</section>
+
+<section class="rooms section" id="rooms">
+    <div class="container">
+        <div class="rooms__inner">
+            <div class="rooms__content">
+                <h2 class="rooms__title section__title">50+ Beautiful rooms inspiration</h2>
+                <p class="rooms__subtitle">Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+                <button class="rooms__btn btn primary">Explore More</button>
+            </div>
+
+            <div class="rooms__Slider">
+                <div class="rooms__inspSlider" id="roomsSlider">
+                    <div class="room__item room__item_1 firstPhoto">
+                        <div class="room__itemPhoto">
+                            <img class="room__photo" src="assets/images/room_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="room__item room__item_2">
+                        <div class="room__itemPhoto">
+                            <img class="room__photo" src="assets/images/room_2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="room__item room__item_3">
+                        <div class="room__itemPhoto">
+                            <img class="room__photo" src="assets/images/room_3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="room__item room__item_4">
+                        <div class="room__itemPhoto">
+                            <img class="room__photo" src="assets/images/room_4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="room__desc" id="room__descSlider">
+                    <div class="room__descItem">
+                        <div class="room__descItemInner">
+                            <div class="room__descMain">
+                                <div class="room__descSubtitle">
+                                    01
+                                    <svg class="dash">
+                                        <use xlink:href="assets/images/sprite.svg#dash"></use>
+                                    </svg>
+                                    Bed Room
+                                </div>
+                                <div class="room__descTitle">Inner Peace</div>
+                            </div>
+                            <a href="#" class="room__descBtn">
+                                <svg>
+                                    <use xlink:href="assets/images/sprite.svg#arrow_2"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="room__descItem">
+                        <div class="room__descItemInner">
+                            <div class="room__descMain">
+                                <div class="room__descSubtitle">
+                                    02
+                                    <svg class="dash">
+                                        <use xlink:href="assets/images/sprite.svg#dash"></use>
+                                    </svg>
+                                    Bed Room
+                                </div>
+                                <div class="room__descTitle">Inner Peace</div>
+                            </div>
+                            <a href="#" class="room__descBtn">
+                                <svg>
+                                    <use xlink:href="assets/images/sprite.svg#arrow_2"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="room__descItem">
+                        <div class="room__descItemInner">
+                            <div class="room__descMain">
+                                <div class="room__descSubtitle">
+                                    03
+                                    <svg class="dash">
+                                        <use xlink:href="assets/images/sprite.svg#dash"></use>
+                                    </svg>
+                                    Bed Room
+                                </div>
+                                <div class="room__descTitle">Inner Peace</div>
+                            </div>
+                            <a href="#" class="room__descBtn">
+                                <svg>
+                                    <use xlink:href="assets/images/sprite.svg#arrow_2"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="room__descItem">
+                        <div class="room__descItemInner">
+                            <div class="room__descMain">
+                                <div class="room__descSubtitle">
+                                    04
+                                    <svg class="dash">
+                                        <use xlink:href="assets/images/sprite.svg#dash"></use>
+                                    </svg>
+                                    Bed Room
+                                </div>
+                                <div class="room__descTitle">Inner Peace</div>
+                            </div>
+                            <a href="#" class="room__descBtn">
+                                <svg>
+                                    <use xlink:href="assets/images/sprite.svg#arrow_2"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rooms__sliderDots"></div>
+            </div>
+
+            <div class="rooms__sliderBtn"></div>
+        </div>
+    </div>
+</section>
+
+<section class="tricks section">
+    <div class="container">
+        <div class="tricks__inner">
+            <h2 class="tricks__title section__title">Tips &amp; Tricks</h2>
+
+
+            <div class="tricks__slider" id="tricks__slider">
+
+                <div class="tricks__item">
+                    <div class="trick__photo">
+                        <img src="assets/images/tricks_1.jpg" alt="">
+                    </div>
+                    <div class="trick__content">
+                        <div class="trick__title">How to create a living room to love</div>
+                        <div class="trick__date">20 jan 2020</div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="tricks__item">
+                    <div class="trick__photo">
+                        <img src="assets/images/tricks_2.jpg" alt="">
+                    </div>
+                    <div class="trick__content">
+                        <div class="trick__title">Solution for clean look working</div>
+                        <div class="trick__date">10 jan 2020</div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="tricks__item">
+                    <div class="trick__photo">
+                        <img src="assets/images/tricks_3.jpg" alt="">
+                    </div>
+                    <div class="trick__content">
+                        <div class="trick__title">Make your cooking activity more fun with good setup</div>
+                        <div class="trick__date">20 jan 2020</div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="tricks__item">
+                    <div class="trick__photo">
+                        <img src="assets/images/tricks_3.jpg" alt="">
+                    </div>
+                    <div class="trick__content">
+                        <div class="trick__title">Make your cooking activity more fun with good setup</div>
+                        <div class="trick__date">31 jan 2020</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="tricks__sliderBtn"></div>
+        </div>
+    </div>
+</section>
+
+<section class="photography secton">
+    <div class="container">
+        <div class="photography__inner">
+            <p class="section__subtitle">Share your setup with</p>
+            <h2 class="section__title">#FuniroFurniture</h2>
+
+            <div class="photography__photos">
+                <div class="photography__col">
+                    <div class="photography__colItem">
+                        <div class="photography__photo">
+                            <img src="assets/images/photography_01.jpg" alt="">
+                        </div>
+                        <div class="photography__photo">
+                            <img src="assets/images/photography_02.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="photography__colItem">
+                        <div class="photography__photo">
+                            <img src="assets/images/photography_06.jpg" alt="">
+                        </div>
+                        <div class="photography__photo">
+                            <img src="assets/images/photography_07.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="photography__col center">
+                    <div class="photography__photo">
+                        <img src="assets/images/photography_03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photography__col">
+                    <div class="photography__colItem">
+                        <div class="photography__photo">
+                            <img src="assets/images/photography_04.jpg" alt="">
+                        </div>
+                        <div class="photography__photo">
+                            <img src="assets/images/photography_05.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="photography__colItem">
+                        <div class="photography__photo">
+                            <img src="assets/images/photography_08.jpg" alt="">
+                        </div>
+                        <div class="photography__photo">
+                            <img src="assets/images/photography_09.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__col footer__col--first">
+                <div class="footer__item">
+                    <div class="footer__title">
+                        Funiro.
+                    </div>
+                    <p class="footer__subtitle">
+                        Worldwide furniture store since 2020. We sell over 1000+ branded products on our website
+                    </p>
+                    <a class="footer__loc" href="#">
+                        <svg>
+                            <use xlink:href="assets/images/sprite.svg#location"></use>
+                        </svg>
+                        Sawojajar Malang, Indonesia
+                    </a>
+                    <a class="footer__tel" href="#">
+                        <svg>
+                            <use xlink:href="assets/images/sprite.svg#phone"></use>
+                        </svg>
+                        +6289 456 3455
+                    </a>
+                    <p class="footer__address">
+                        www.funiro.com
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer__col footer__col--second">
+
+                <div class="footer__item">
+                    <div class="footer__title">
+                        Menu
+                    </div>
+                    <ul class="footer__nav">
+                        <li>
+                            <a class="footer__navLink" href="#">
+                                Products
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__navLink" href="#">
+                                Rooms
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__navLink" href="#">
+                                Inspirations
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__navLink" href="#">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__navLink" href="#">
+                                Terms &amp; Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__item">
+                    <div class="footer__title">
+                        Account
+                    </div>
+                    <ul class="footer__nav">
+                        <li>
+                            <a class="footer__navLink" href="#">
+                                My Account
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__navLink" href="#">
+                                Checkout
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__navLink" href="#">
+                                My subnav
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__navLink" href="#">
+                                My catalog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__item">
+                    <div class="footer__title">
+                        Stay&nbsp;Connected
+                    </div>
+                    <ul class="footer__nav">
+                        <li>
+                            <a class="footer__navLink" href="#">
+                                Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__navLink" href="#">
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__navLink" href="#">
+                                Twitter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__item">
+                    <div class="footer__title">
+                        Stay Updated
+                    </div>
+                    <form class="footer__subscribe" action="/" method="post">
+                        <input class="footer__subscribeInput" type="email" name="name" placeholder="Enter your email" required>
+                        <button class="footer__subscribeBtn" type="submit">
+                            <svg>
+                                <use xlink:href="assets/images/sprite.svg#subscribe"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</div>
+
+
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
