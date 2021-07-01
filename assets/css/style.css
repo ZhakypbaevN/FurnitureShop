@@ -1233,7 +1233,7 @@ img,
 }
 @media (max-width: 768px) {
   .subnav-content__list.cartContentList {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 190px);
   }
   .subnav-content__list.likeContentList {
     height: calc(100vh - 45px);
