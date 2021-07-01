@@ -19,11 +19,22 @@ $(function() {
 
 
     function checkScroll(scrollOffset) {
-        if( scrollOffset >= headerH ) {
-            header.addClass("fixed");
-        } else {
-            header.removeClass("fixed");
+        if(doc_w > '768'){
+            if( scrollOffset >= headerH ) {
+                header.addClass("fixed");
+            } else {
+                header.removeClass("fixed");
+            }
         }
+
+        if(doc_w < '768'){
+            if( scrollOffset > 0 ) {
+                header.addClass("fixed");
+            } else {
+                header.removeClass("fixed");
+            }
+        }
+        
     }
 
 
