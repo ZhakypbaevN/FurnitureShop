@@ -2,7 +2,8 @@ $(function() {
 
     var header = $("#header"),
         headerH = $("#header").innerHeight(),
-        scrollOffset = $(window).scrollTop();
+        scrollOffset = $(window).scrollTop(),
+        doc_w = $(window).width();
         
 
 

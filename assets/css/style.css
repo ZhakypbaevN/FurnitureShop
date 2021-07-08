@@ -1140,7 +1140,7 @@ img,
   }
   .subnav-content__bottom {
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     z-index: 1;
     background-color: #fff;
@@ -1233,7 +1233,7 @@ img,
 }
 @media (max-width: 768px) {
   .subnav-content__list.cartContentList {
-    height: calc(100vh - 190px);
+    height: 100%;
   }
   .subnav-content__list.likeContentList {
     height: calc(100vh - 45px);
